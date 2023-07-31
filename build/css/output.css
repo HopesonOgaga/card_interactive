@@ -533,3 +533,68 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-blue-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\/img\/hero-pattern\.svg\'\)\] {
+  background-image: url('/img/hero-pattern.svg');
+}
+
+.bg-\[url\(\'\[url\(\'\/img\/hero-pattern\.svg\'\)\]\'\)\] {
+  background-image: url('[url('/img/hero-pattern.svg')]');
+}
+
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+
+.bg-\[url\(\'\'\.\/images\/bg-main-mobile\.png\'\'\)\] {
+  background-image: url(''./images/bg-main-mobile.png'');
+}
+
+.bg-\[url\(\'\.\/images\/bg-main-mobile\.png\'\)\] {
+  background-image: url('./images/bg-main-mobile.png');
+}
+
+.bg-none {
+  background-image: none;
+}
