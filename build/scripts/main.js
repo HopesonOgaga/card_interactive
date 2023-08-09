@@ -1,4 +1,5 @@
 // dom
+const thank_card = document.querySelector(".thank_you");
 const cvc_display = document.querySelector(".cvc_data");
 const display_number = document.querySelector(".number_display");
 const display_name = document.querySelector(".name_val");
