@@ -1,116 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./scripts/main.js" defer></script>
-    <link rel="stylesheet" href="./css/output.css">
+    <link rel="stylesheet" href="./css/output.css" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue&family=Fira+Sans:wght@200&family=Poppins:wght@100&family=Quicksand:wght@300&family=Space+Grotesk:wght@300&display=swap" rel="stylesheet">
-</head>
-<body class="font-epilogue ">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue&family=Fira+Sans:wght@200&family=Poppins:wght@100&family=Quicksand:wght@300&family=Space+Grotesk:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-epilogue">
     <main>
-        <section class="flex flex-col   md:flex-row  md:justify-evenly  ">
-            <div class="div_background w-full  md:w-2/5  md:h-screen bg-cover  ">
-                <style>
-                    .div_background{
-                        background-image: url("./images/bg-main-desktop.png");
-                        background-repeat: no-repeat;
-                    }
-                </style>
-                <!-- card -->
-                <div class="flex justify-center flex-col items-center w-full h-screen gap-8   ">
-                    <!-- card front -->
-                    <div class="card_grad bg-gradient-to-r from-grad1 to-grad2  w-5/6 md:w-3/4  h-1/3 rounded-md">
-                        <style>
-                            .card_grad{
-                                background-image: url("./images/bg-card-front.png");
-                                background-repeat: no-repeat;
-                            }
-                        </style>
-                        
-                        <div class="flex gap-4 my-6 ml-4 ">
-                            <div class="bg-white rounded-full w-16  h-16  "></div>
-                            <div class="bg-transparent border-2 border-white  rounded-full w-10 h-10 my-4 "></div>
-                        </div>
-                        <div>
-                            <p class="number_display text-white font-bold text-3xl text-center mt-8 " >0000 0000 0000 0000</p>
-                        </div>
-                        <div class="flex justify-around  text-white font-semibold  capitalize mt-8 gap-6 ">
-                            <p class="name_val">felicia lerie</p>
-                            <p class="date_value"><span class="span_month">09</span> / <span class="span_year">00</span></p>
-                        </div>
-                    </div>
-                        
-                    <!-- card back -->
+      <section class="flex flex-col md:flex-row md:justify-evenly">
+        <div class="div_background w-full md:w-2/5 md:h-screen bg-cover">
+          <style>
+            .div_background {
+              background-image: url("./images/bg-main-desktop.png");
+              background-repeat: no-repeat;
+            }
+          </style>
+          <!-- card -->
+          <div
+            class="flex justify-center flex-col items-center w-full h-screen gap-8"
+          >
+            <!-- card front -->
+            <div
+              class="card_grad bg-gradient-to-r from-grad1 to-grad2 w-5/6 md:w-3/4 h-1/3 rounded-md"
+            >
+              <style>
+                .card_grad {
+                  background-image: url("./images/bg-card-front.png");
+                  background-repeat: no-repeat;
+                }
+              </style>
 
-                        <div class="card_back bg-gradient-to-r from-grad1 to-grad2 w-5/6  md:w-3/4  h-1/3 rounded-md   ">
-                            <style>
-                                .card_back{
-                                    background-image: url('./images/bg-card-back.png');
-                                    background-repeat: no-repeat;
-                                }
-                            </style>
-                            <div class="cvc_data ml-24 flex justify-center h-full w-full items-center  text-slate-800  font-medium capitalize "><p class="">000</p></div>
-                            
-                        </div> 
-                </div>
-             
+              <div class="flex gap-4 my-6 ml-4">
+                <div class="bg-white rounded-full w-16 h-16"></div>
+                <div
+                  class="bg-transparent border-2 border-white rounded-full w-10 h-10 my-4"
+                ></div>
+              </div>
+              <div>
+                <p
+                  class="number_display text-white font-bold text-3xl text-center mt-8"
+                >
+                  0000 0000 0000 0000
+                </p>
+              </div>
+              <div
+                class="flex justify-around text-white font-semibold capitalize mt-8 gap-6"
+              >
+                <p class="name_val">felicia lerie</p>
+                <p class="date_value">
+                  <span class="span_month">09</span> /
+                  <span class="span_year">00</span>
+                </p>
+              </div>
             </div>
-            <!-- form section -->
-            <div class=" form_card w-screen    md:w-3/5 h-screen flex justify-center items-center align-middle p-6 ">
-             <div class="">
-                <form action="" method="get" class="mb-6">
-                    <label for="cardholder" class=" uppercase font-semibold text-xs text-violet-700">cardholder name</label>
-                    <br>
-                    <input class="cardholder_display my-2 w-5/6  md:w-3/5 h-10 rounded-lg border-solid border-indigo-300 border-2 active:border-indigo-500 " type="text" name="cardholder" id="cardholder"> 
+
+            <!-- card back -->
+
+            <div
+              class="card_back bg-gradient-to-r from-grad1 to-grad2 w-5/6 md:w-3/4 h-1/3 rounded-md"
+            >
+              <style>
+                .card_back {
+                  background-image: url("./images/bg-card-back.png");
+                  background-repeat: no-repeat;
+                }
+              </style>
+              <div
+                class="cvc_data ml-24 flex justify-center h-full w-full items-center text-slate-800 font-medium capitalize"
+              >
+                <p class="">000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- form section -->
+        <div
+          class="form_card w-screen md:w-3/5 h-screen flex justify-center items-center align-middle p-6"
+        >
+          <div class="">
+            <form action="" method="get" class="mb-6">
+              <label
+                for="cardholder"
+                class="uppercase font-semibold text-xs text-violet-700"
+                >cardholder name</label
+              >
+              <br />
+              <input
+                class="cardholder_display my-2 w-5/6 md:w-3/5 h-10 rounded-lg border-solid border-indigo-300 border-2 active:border-indigo-500"
+                type="text"
+                name="cardholder"
+                id="cardholder"
+              />
+            </form>
+            <form action="" method="get">
+              <label
+                for="cardnumber"
+                class="uppercase font-semibold text-xs text-violet-700"
+                >card number</label
+              >
+              <br />
+              <input
+                class="card_number my-2 w-5/6 md:w-3/5 h-10 rounded-lg border-solid border-indigo-300 border-2"
+                type="text"
+                name="cardnumber"
+                id="cardnumber"
+              />
+              <p
+                class="numbers_format text-xs text-red-300 font-semibold capitalize mb-4 py-2"
+              >
+                wrong format, numbers only!
+              </p>
+            </form>
+            <div class="flex md:flex-row gap-4 justify-evenly">
+              <form action="" method="get">
+                <label
+                  for="expdate"
+                  class="uppercase text-xs font-semibold text-violet-700"
+                  >exp.date(mm/yy)</label
+                >
+                <br />
+                <div class="flex gap-2">
+                  <input
+                    class="mm pl-2 w-4/5 md:w-1/3 h-10 rounded-lg border-solid border-indigo-300 border-2 active:border-indigo-500 placeholder:uppercase placeholder:pl-2"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="mm"
+                    maxlength="2"
+                  />
+                  <label for=""></label><br />
+                  <input
+                    class="yy pl-2 w-4/5 md:w-1/3 h-10 rounded-lg border-solid border-indigo-300 border-2 active:border-indigo-500 placeholder:uppercase placeholder:pl-2"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="yy"
+                    maxlength="2"
+                  />
+                </div>
+                <p
+                  class="month_blank text-xs text-red-300 font-semibold capitalize mb-4 py-2"
+                >
+                  can't be blank
+                </p>
+              </form>
+              <div>
+                <form action="" method="get">
+                  <label
+                    class="uppercase font-semibold text-xs text-violet-700"
+                    for="cvc"
+                    >cvc</label
+                  >
+                  <br />
+                  <input
+                    data-wordlimit="3"
+                    data-wordcount="true"
+                    class="cvc_input w-4/5 md:w-1/3 h-10 rounded-lg border-solid border-indigo-300 border-2 active:border-indigo-500"
+                    type="text"
+                    name=""
+                    id=""
+                    maxlength="3"
+                  />
+                  <p
+                    class="cvc_value text-xs text-red-300 font-semibold capitalize mb-4 py-2"
+                  >
+                    can't be blank
+                  </p>
                 </form>
-                <form action="" method="get" >
-                     <label for="cardnumber" class=" uppercase font-semibold text-xs text-violet-700  ">card number</label> <br>
-                      <input class=" card_number my-2 w-5/6 md:w-3/5  h-10 rounded-lg border-solid border-indigo-300 border-2" type="text" name="cardnumber" id="cardnumber">
-                      <p class="numbers_format text-xs text-red-300 font-semibold capitalize mb-4 py-2 ">wrong format, numbers only!</p>
-                </form>
-                <div class=" flex  md:flex-row gap-4   justify-evenly ">
-                    <form action="" method="get" >
-                        <label for="expdate" class="uppercase text-xs font-semibold text-violet-700">exp.date(mm/yy)</label> <br>
-                        <div class="flex gap-2">
-                            <input class="mm pl-2 w-4/5  md:w-1/3  h-10 rounded-lg border-solid border-indigo-300 border-2 active:border-indigo-500 placeholder:uppercase placeholder:pl-2 " type="datetime" name="" id="" placeholder="mm" >
-                           <label for=""></label><br>
-                           <input  class="yy pl-2 w-4/5  md:w-1/3  h-10 rounded-lg border-solid border-indigo-300 border-2 active:border-indigo-500  placeholder:uppercase placeholder:pl-2 " type="datetime" name="" id="" placeholder="yy">
-                           
-                        </div>
-                        <p class="month_blank text-xs text-red-300 font-semibold capitalize mb-4 py-2">can't be blank </p>
-                    </form>
-                   <div>
-                    <form action="" method="get">
-                        <label class=" uppercase font-semibold text-xs text-violet-700 " for="cvc">cvc</label> <br>
-                        <input  class="cvc_input w-4/5  md:w-1/3  h-10 rounded-lg border-solid border-indigo-300 border-2 active:border-indigo-500 " type="number" name="" id="">
-                        <p class= " cvc_value text-xs text-red-300 font-semibold capitalize mb-4 py-2">can't be blank </p>
-                    </form>
-                   </div>
-                </div>
-                <!-- button -->
-                <div class="flex justify-center  mt-6">
-                    <input class="btn_enter h-12 w-5/6  md:w-2/3  bg-indigo-950 shadow-md rounded-lg text-white uppercase font-medium text-sm hover:bg-indigo-700 cursor-pointer" type="button" value="confirm">
-                </div>
-             </div>
+              </div>
             </div>
-            <!-- thank you card -->
-            <div class=" w-screen  md:w-3/4 h-screen flex justify-center items-center thank_you ">
-                <div class="  ">
-                    <div class="mb-12 md:mb-6  flex justify-center"><img src="./images/icon-complete.svg" alt="checked"></div>
-                    <div class="text-center gap-6 mb-24 md:mb-8 ">
-                        <p class="mb-4  capitalize font-semibold text-indigo-800 text-6xl text-center">thank you</p>
-                        <p class="capitalize font-semibold text-indigo-400 text-lg ">we've added your card details</p>
-                    </div>
-                    <div class="flex justify-center ">
-                        <input class="btn_enter  h-12 w-full   md:w-full  bg-indigo-950 shadow-md rounded-lg text-white uppercase font-medium text-sm hover:bg-indigo-700 cursor-pointer" type="button" value="confirm">
-                    </div>
-                </div>
+            <!-- button -->
+            <div class="flex justify-center mt-6">
+              <input
+                class="btn_enter h-12 w-5/6 md:w-2/3 bg-indigo-950 shadow-md rounded-lg text-white uppercase font-medium text-sm hover:bg-indigo-700 cursor-pointer"
+                type="button"
+                value="confirm"
+              />
             </div>
-        </section>
+          </div>
+        </div>
+        <!-- thank you card -->
+        <div
+          class="w-screen md:w-3/4 h-screen flex justify-center items-center thank_you"
+        >
+          <div class="  ">
+            <div class="mb-12 md:mb-6 flex justify-center">
+              <img src="./images/icon-complete.svg" alt="checked" />
+            </div>
+            <div class="text-center gap-6 mb-24 md:mb-8">
+              <p
+                class="mb-4 capitalize font-semibold text-indigo-800 text-6xl text-center"
+              >
+                thank you
+              </p>
+              <p class="capitalize font-semibold text-indigo-400 text-lg">
+                we've added your card details
+              </p>
+            </div>
+            <div class="flex justify-center">
+              <input
+                class="btn_enter h-12 w-full md:w-full bg-indigo-950 shadow-md rounded-lg text-white uppercase font-medium text-sm hover:bg-indigo-700 cursor-pointer"
+                type="button"
+                value="confirm"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
-</html> 
+  </body>
+</html>

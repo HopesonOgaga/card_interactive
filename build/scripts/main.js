@@ -19,7 +19,7 @@ const card_value_text = document.querySelector(".cardholder_display");
 
 const month_info = document.querySelector(".month_blank");
 const number_format = document.querySelector(".numbers_format");
-const cvc_value = document.querySelector('.cvc_value')
+const cvc_value = document.querySelector(".cvc_value");
 
 // functions
 // hidden
@@ -27,7 +27,7 @@ const cvc_value = document.querySelector('.cvc_value')
 thank_card.classList.add("hidden");
 month_info.classList.add("hidden");
 number_format.classList.add("hidden");
-cvc_value.classList.add('hidden')
+cvc_value.classList.add("hidden");
 // text value
 card_value_text.addEventListener("input", function (evt) {
   display_name.textContent = `${evt.target.value}`;
@@ -64,16 +64,20 @@ year.addEventListener("input", function (e) {
 });
 // cvc
 cvc_input.addEventListener("input", function (e) {
-  cvc_display.textContent = e.target.value;
-  if (cvc_display.textContent === "") {
-    cvc_display.textContent = "000";
-    cvc_value.classList.remove('hidden')
-  }else{
-    cvc_value.classList.add('hidden')
+  //   cvc_display.textContent = e.target.value;
+  const cvc_value_input = e.target.value;
+  cvc_display.textContent = cvc_value_input;
+
+  if (cvc_value_input === "") {
+    cvc_value.classList.remove("hidden");
+  } else {
+    cvc_value.classList.add("hidden");
   }
 });
+
 // date and year
 
+const check_value = () => {};
 enter_btn.addEventListener("click", function () {
   console.log(value_text());
 });
